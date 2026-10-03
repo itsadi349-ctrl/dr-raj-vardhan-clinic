@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="hi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Dr. Raj Vardhan | Sri Baidyanath Diabetes Clinic Motihari</title>
+  <meta name="description" content="Senior Consultant Diabetologist & General Physician in Motihari, Bihar. Book online OPD appointment, direct call, WhatsApp consultation, rapid HbA1c lab tests.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230f766e'%3E%3Cpath d='M19 10.5h-5.5V5a1.5 1.5 0 0 0-3 0v5.5H5a1.5 1.5 0 0 0 0 3h5.5V19a1.5 1.5 0 0 0 3 0v-5.5H19a1.5 1.5 0 0 0 0-3z'/%3E%3C/svg%3E">
+  
+  <!-- Tailwind CSS & Google Fonts & Icons -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8fafc; color: #0f172a; }
+    h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
+    @media print {
+      body * { visibility: hidden !important; }
+      #printable-slip, #printable-slip * { visibility: visible !important; }
+      #printable-slip { position: absolute; left: 0; top: 0; width: 100%; border: 1px solid #000; box-shadow: none; margin: 0; padding: 20px; }
+      .no-print { display: none !important; }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased selection:bg-teal-100 selection:text-teal-900 pb-16 sm:pb-0">
+
+  <!-- ================= 1. TOP ANNOUNCEMENT BAR ================= -->
+  <div class="hidden lg:block bg-slate-900 text-slate-300 text-xs py-2 px-6 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="flex items-center gap-1.5 font-medium text-white">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          Clinic Open Now (Balua Taal Rd, Motihari)
+        </span>
+        <span class="text-slate-600">·</span>
+        <span>OPD Token Registration: <strong class="text-emerald-400">₹100 Only</strong></span>
+        <span class="text-slate-600">·</span>
+        <span class="text-teal-300 flex items-center gap-1">
+          <i class="fa-solid fa-shield-halved text-teal-400"></i> Bihar Medical Council Reg: BMC/48291-BR
+        </span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:+919566039238" class="text-slate-300 hover:text-white transition-colors flex items-center gap-1.5">
+          <i class="fa-solid fa-phone text-emerald-400"></i> Reception: 095660 39238
+        </a>
+        <span class="text-slate-600">·</span>
+        <span>08:30 AM – 08:00 PM</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= 2. MAIN HEADER NAVBAR ================= -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 py-3.5 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="text-base sm:text-lg font-bold tracking-tight text-slate-900 flex items-center gap-2.5">
+        <span class="w-9 h-9 rounded-xl bg-teal-700 text-white flex items-center justify-center font-bold text-sm shadow-sm">
+          SB
+        </span>
+        <div class="leading-tight">
+          <span class="font-heading block font-bold text-slate-900">Sri Baidyanath Diabetes Clinic</span>
+          <span class="text-[11px] text-slate-500 font-normal hidden sm:block">Dr. Raj Vardhan · Balua Taal, Motihari</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-sm font-medium text-slate-600">
+        <a href="#doctor-profile" class="hover:text-teal-700 transition-colors">Doctor Profile</a>
+        <a href="#services" class="hover:text-teal-700 transition-colors">Services & Lab</a>
+        <a href="#calculator" class="hover:text-teal-700 transition-colors">Sugar Calculator</a>
+        <a href="#booking-section" class="hover:text-teal-700 transition-colors font-semibold text-teal-800">Online Token</a>
+        <a href="#reviews" class="hover:text-teal-700 transition-colors">Reviews (4.9★)</a>
+        <a href="#faqs" class="hover:text-teal-700 transition-colors">FAQs</a>
+        <a href="#location" class="hover:text-teal-700 transition-colors">Route & Timings</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-3">
+        <a href="tel:+919566039238" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-semibold text-teal-800 bg-teal-50 border border-teal-200 rounded-lg hover:bg-teal-100 transition-colors">
+          <i class="fa-solid fa-phone text-teal-600"></i>
+          <span>Call Reception</span>
+        </a>
+
+        <a href="#booking-section" class="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold text-white bg-teal-700 hover:bg-teal-800 rounded-lg transition-colors shadow-sm">
+          <i class="fa-regular fa-calendar-check"></i>
+          <span>Book Token (₹100)</span>
+        </a>
+
+        <button onclick="toggleMobileMenu()" class="md:hidden p-2 text-slate-600 hover:text-slate-900 rounded-lg hover:bg-slate-100">
+          <i class="fa-solid fa-bars text-lg"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobileMenu" class="hidden md:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-5 space-y-3 shadow-lg">
+      <div class="flex flex-col space-y-2 text-sm font-medium text-slate-700">
+        <a href="#doctor-profile" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100">Doctor Profile</a>
+        <a href="#services" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100">Services & Rapid Lab</a>
+        <a href="#calculator" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100">Blood Sugar Calculator</a>
+        <a href="#booking-section" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100 text-teal-700 font-bold">Online Token Booking</a>
+        <a href="#reviews" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100">Patient Reviews (4.9★)</a>
+        <a href="#faqs" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100">FAQs</a>
+        <a href="#location" onclick="toggleMobileMenu()" class="py-2">Clinic Location & Route</a>
+      </div>
+      <div class="pt-2 flex flex-col gap-2">
+        <a href="tel:+919566039238" class="w-full flex items-center justify-center gap-2 py-2.5 text-xs font-semibold text-teal-800 bg-teal-50 border border-teal-200 rounded-lg">
+          <i class="fa-solid fa-phone text-teal-600"></i> Call: 095660 39238
+        </a>
+        <a href="https://wa.me/919566039238" target="_blank" class="w-full flex items-center justify-center gap-2 py-2.5 text-xs font-semibold text-white bg-emerald-600 rounded-lg">
+          <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp Booking
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= 3. HERO SECTION ================= -->
+  <section class="relative pt-12 pb-16 lg:pb-24 bg-gradient-to-b from-teal-50/50 via-white to-slate-50 border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-7 space-y-6">
+          <div class="flex flex-wrap items-center gap-2 text-xs sm:text-sm text-slate-600 font-medium">
+            <span class="text-teal-800 font-semibold tracking-wide">Motihari, East Champaran</span>
+            <span>·</span>
+            <span class="text-amber-700 flex items-center gap-1">
+              <i class="fa-solid fa-star text-amber-500"></i>
+              <strong class="text-slate-900">4.9 / 5.0</strong> (311 Google Reviews)
+            </span>
+            <span>·</span>
+            <span class="text-emerald-700 font-semibold">OPD Token: ₹100</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 leading-[1.15]">
+            Specialized Diabetes & Metabolic Care in Motihari
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
+            Led by <strong class="text-slate-900 font-semibold">Dr. Raj Vardhan</strong>, Senior Consultant Diabetologist. Evidence-based diabetes care, in-house 10-minute HbA1c testing, diabetic foot screening, personalized insulin titration, and patient-first medical counseling.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs sm:text-sm text-slate-700">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-check text-teal-600"></i>
+              <span>Dedicated 15–20 min consultation per patient</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-check text-teal-600"></i>
+              <span>In-House 10-Minute Rapid HbA1c & Pathology</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-check text-teal-600"></i>
+              <span>Cold-Chain 2°C–8°C Genuine Insulin Pharmacy</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-check text-teal-600"></i>
+              <span>Near City Cart Mall, Balua Taal Rd, Motihari</span>
+            </div>
+          </div>
+
+          <!-- Direct Call & WhatsApp Buttons -->
+          <div class="pt-3 flex flex-wrap items-center gap-3">
+            <a href="tel:+919566039238" class="inline-flex items-center justify-center gap-2 px-5 py-3 text-sm font-semibold text-white bg-slate-900 hover:bg-slate-800 rounded-lg shadow-sm transition-all active:scale-95">
+              <i class="fa-solid fa-phone text-emerald-400"></i>
+              <span>Call: 095660 39238</span>
+            </a>
+
+            <a href="https://wa.me/919566039238?text=Namaste%20Dr.%20Raj%20Vardhan%20Sir%2C%20I%20would%20like%20to%20book%20an%20appointment%20at%20Sri%20Baidyanath%20Diabetes%20Clinic%20Motihari." target="_blank" class="inline-flex items-center justify-center gap-2 px-5 py-3 text-sm font-semibold text-white bg-emerald-600 hover:bg-emerald-700 rounded-lg shadow-sm transition-all active:scale-95">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>WhatsApp Booking</span>
+            </a>
+
+            <a href="#booking-section" class="inline-flex items-center justify-center gap-2 px-5 py-3 text-sm font-semibold text-teal-800 bg-teal-50 border border-teal-200 hover:bg-teal-100 rounded-lg transition-all active:scale-95">
+              <i class="fa-regular fa-calendar-check text-teal-700"></i>
+              <span>Book Online Token (₹100)</span>
+            </a>
+          </div>
+
+          <div class="pt-2 text-xs text-slate-500 flex items-center gap-2">
+            <i class="fa-solid fa-location-dot text-rose-500"></i>
+            <span>Balua Taal Rd, Azad Nagar, Motihari (1.0 km from Balua Chowk · 1.8 km from Railway Station)</span>
+          </div>
+        </div>
+
+        <!-- Doctor Showcase Card -->
+        <div class="lg:col-span-5">
+          <div class="bg-white rounded-2xl border border-slate-200 shadow-xl overflow-hidden max-w-md mx-auto">
+            <div class="bg-gradient-to-br from-teal-800 via-teal-900 to-slate-950 p-8 text-white text-center space-y-3 relative overflow-hidden">
+              <div class="w-24 h-24 rounded-full bg-teal-700/80 border-2 border-teal-300 mx-auto flex items-center justify-center text-3xl font-bold shadow-md">
+                DR
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold font-heading">Dr. Raj Vardhan</h3>
+                <p class="text-teal-200 text-xs mt-0.5">MBBS, P.G. Diploma in Diabetology (Gold Medalist)</p>
+                <p class="text-slate-300 text-xs mt-1 font-medium">Senior Consultant Diabetologist & General Physician</p>
+              </div>
+              <span class="inline-block bg-white/10 text-teal-200 text-xs px-3 py-1 rounded-full border border-teal-400/30">
+                Bihar Medical Council: BMC/48291-BR
+              </span>
+            </div>
+
+            <div class="p-6 bg-white space-y-4">
+              <div class="grid grid-cols-3 divide-x divide-slate-100 text-center">
+                <div>
+                  <div class="text-lg font-bold text-slate-900">12+</div>
+                  <div class="text-[11px] text-slate-500">Years Exp.</div>
+                </div>
+                <div>
+                  <div class="text-lg font-bold text-slate-900">18,500+</div>
+                  <div class="text-[11px] text-slate-500">Patients Managed</div>
+                </div>
+                <div>
+                  <div class="text-lg font-bold text-emerald-600">4.9 ★</div>
+                  <div class="text-[11px] text-slate-500">311 Reviews</div>
+                </div>
+              </div>
+
+              <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                <span class="text-slate-600 font-medium">OPD Consultation Hours:</span>
+                <span class="font-semibold text-teal-800 bg-teal-50 px-2.5 py-1 rounded">
+                  08:30 AM – 08:00 PM
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 4. DOCTOR PROFILE ================= -->
+  <section id="doctor-profile" class="py-16 sm:py-20 bg-white border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <div class="max-w-3xl mb-12">
+        <div class="text-xs font-semibold uppercase tracking-wider text-teal-700 mb-2">Meet Your Specialist</div>
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">About Dr. Raj Vardhan</h2>
+        <p class="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed">
+          Dr. Raj Vardhan is one of Motihari and East Champaran's most respected diabetologists and general physicians. Leading Sri Baidyanath Diabetes Clinic, he provides evidence-based, compassionate care for patients suffering from Type 1, Type 2, and Gestational Diabetes, along with diabetic foot ulcers, neuropathy, hypertension, and metabolic syndrome.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div class="lg:col-span-7 space-y-6">
+          <div class="p-6 bg-teal-50/60 rounded-xl border border-teal-200/70 space-y-2">
+            <div class="text-xs font-bold uppercase tracking-wider text-teal-800">Doctor's Clinical Philosophy</div>
+            <blockquote class="italic text-sm sm:text-base text-slate-800 leading-relaxed">
+              “Every patient with diabetes deserves attentive listening, honest guidance, and a treatment plan that fits their daily life. Glycemic control is not just about prescriptions; it is about empowering the patient with knowledge, empathy, and continuous support.”
+            </blockquote>
+            <div class="text-xs font-semibold text-teal-900 mt-2">— Dr. Raj Vardhan, Motihari</div>
+          </div>
+
+          <div class="space-y-3">
+            <h3 class="text-sm font-bold text-slate-900 uppercase tracking-wider">Education & Credentials</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm text-slate-700">
+              <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 flex items-start gap-2.5">
+                <i class="fa-solid fa-graduation-cap text-teal-700 text-base mt-0.5"></i>
+                <div>
+                  <strong class="block text-slate-900">MBBS Degree</strong>
+                  <span class="text-slate-500 text-xs">Medical Council Recognized</span>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 flex items-start gap-2.5">
+                <i class="fa-solid fa-award text-teal-700 text-base mt-0.5"></i>
+                <div>
+                  <strong class="block text-slate-900">P.G. Diploma in Diabetology</strong>
+                  <span class="text-slate-500 text-xs">Gold Medalist · Insulin Titration</span>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 flex items-start gap-2.5">
+                <i class="fa-solid fa-id-card text-teal-700 text-base mt-0.5"></i>
+                <div>
+                  <strong class="block text-slate-900">Bihar Medical Council</strong>
+                  <span class="text-slate-500 text-xs">Reg. No: BMC/48291-BR</span>
+                </div>
+              </div>
+              <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 flex items-start gap-2.5">
+                <i class="fa-solid fa-clock-rotate-left text-teal-700 text-base mt-0.5"></i>
+                <div>
+                  <strong class="block text-slate-900">12+ Years Practice</strong>
+                  <span class="text-slate-500 text-xs">18,500+ successful consultations</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 bg-slate-900 text-white rounded-2xl p-6 shadow-lg space-y-4">
+          <div class="border-b border-slate-800 pb-3">
+            <span class="text-xs uppercase tracking-wider text-teal-400 font-semibold">Consultation Hours</span>
+            <h4 class="text-lg font-bold text-white mt-0.5">Daily OPD Shifts</h4>
+          </div>
+
+          <div class="space-y-2.5 text-xs sm:text-sm">
+            <div class="flex justify-between py-1.5 border-b border-slate-800">
+              <span class="text-slate-300">Morning Shift</span>
+              <strong class="text-white">08:30 AM – 01:30 PM</strong>
+            </div>
+            <div class="flex justify-between py-1.5 border-b border-slate-800">
+              <span class="text-slate-300">Evening Shift</span>
+              <strong class="text-white">04:00 PM – 08:00 PM</strong>
+            </div>
+            <div class="flex justify-between py-1.5 border-b border-slate-800">
+              <span class="text-slate-300">Sunday Special OPD</span>
+              <strong class="text-amber-400">09:00 AM – 01:00 PM</strong>
+            </div>
+            <div class="flex justify-between py-1.5">
+              <span class="text-slate-300">OPD Token Fee</span>
+              <strong class="text-emerald-400 font-bold">₹100 Only (Payable at clinic)</strong>
+            </div>
+          </div>
+
+          <a href="#booking-section" class="block w-full py-3 bg-teal-600 hover:bg-teal-500 text-white font-semibold rounded-lg text-xs sm:text-sm text-center transition-colors">
+            Book Token Online Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 5. SERVICES & LAB ================= -->
+  <section id="services" class="py-16 sm:py-20 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <div class="max-w-3xl mb-12">
+        <div class="text-xs font-semibold uppercase tracking-wider text-teal-700 mb-2">Specializations</div>
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">Clinical Services & Laboratory</h2>
+        <p class="mt-2 text-slate-600 text-sm sm:text-base">
+          From rapid 10-minute HbA1c testing to diabetic foot ulcer therapy and 2°C–8°C insulin dispensary.
+        </p>
+      </div>
+
+      <!-- Lab Highlight Banner -->
+      <div class="mb-10 bg-slate-900 text-white rounded-2xl p-6 sm:p-8 border border-slate-800 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+        <div class="md:col-span-8 space-y-3">
+          <div class="inline-flex items-center gap-2 text-xs font-semibold text-teal-400 uppercase tracking-wider">
+            <i class="fa-solid fa-flask"></i> In-House Rapid Pathology
+          </div>
+          <h3 class="text-xl sm:text-2xl font-bold text-white">Get Accurate HbA1c & Blood Sugar Reports in 10 Minutes</h3>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            No waiting 24 to 48 hours for laboratory results. Patients can have Fasting Sugar, Post-Prandial Sugar, HbA1c, and Serum Creatinine tested on-site before consultation.
+          </p>
+        </div>
+        <div class="md:col-span-4 text-center md:text-right">
+          <a href="#booking-section" class="inline-flex items-center gap-2 px-5 py-3 text-xs sm:text-sm font-semibold text-slate-900 bg-teal-400 hover:bg-teal-300 rounded-lg transition-colors">
+            <span>Book Lab Test + OPD</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-teal-50 border border-teal-200 flex items-center justify-center text-teal-700">
+            <i class="fa-solid fa-heart-pulse text-lg"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-base">Comprehensive Diabetes Care</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Personalized glycemic protocols for Type 2, Type 1, and Gestational Diabetes mellitus with oral hypoglycemic and insulin titration.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-teal-50 border border-teal-200 flex items-center justify-center text-teal-700">
+            <i class="fa-solid fa-socks text-lg"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-base">Diabetic Foot & Neuropathy</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Monofilament sensory testing, burning sensation and numbness treatment, ulcer risk grading, and customized footwear counseling.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-teal-50 border border-teal-200 flex items-center justify-center text-teal-700">
+            <i class="fa-solid fa-flask-vial text-lg"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-base">In-House Pathology</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            10-minute digital HbA1c, venous blood draw, Lipid Profile, Serum Creatinine, and microalbuminuria screening.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-teal-50 border border-teal-200 flex items-center justify-center text-teal-700">
+            <i class="fa-solid fa-stethoscope text-lg"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-base">Cardiovascular & BP Screening</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            12-lead resting digital ECG, ambulatory blood pressure mapping, and preventive cardiovascular disease protection.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-teal-50 border border-teal-200 flex items-center justify-center text-teal-700">
+            <i class="fa-solid fa-apple-whole text-lg"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-base">Bihari Meal Planning & Diet</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Culturally customized nutrition charts tailored to North Indian and Bihari staples for sustainable glycemic control without starvation.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-teal-50 border border-teal-200 flex items-center justify-center text-teal-700">
+            <i class="fa-solid fa-pills text-lg"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-base">In-House Cold-Chain Pharmacy</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Genuine anti-diabetic medications, glucometers, strips, and refrigerator-stored 2°C–8°C insulins at government-compliant pricing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 6. ONLINE APPOINTMENT BOOKING ================= -->
+  <section id="booking-section" class="py-16 sm:py-20 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <div class="text-xs font-semibold uppercase tracking-wider text-teal-700 mb-1">Online OPD Registration</div>
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">
+          Book Appointment with Dr. Raj Vardhan
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-600 mt-2">
+          Reserve your token in 60 seconds. Instant digital OPD slip with automatic SMS & Email reminder simulation.
+        </p>
+      </div>
+
+      <!-- Booking Form Card -->
+      <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 sm:p-8 space-y-6">
+        
+        <form id="appointmentForm" onsubmit="handleFormSubmit(event)" class="space-y-6">
+          
+          <div class="space-y-2">
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-800">1. Select Consultation Service</label>
+            <select id="serviceSelect" class="w-full px-3 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-teal-600 focus:outline-none">
+              <option value="Diabetes Management">Comprehensive Diabetes & Glycemic Control (OPD Token ₹100)</option>
+              <option value="HbA1c Lab Test + OPD">Rapid HbA1c Lab Test + Diabetologist Consultation</option>
+              <option value="Diabetic Foot Checkup">Diabetic Foot & Neuropathy Examination</option>
+              <option value="Hypertension & ECG">Hypertension & Cardiovascular Health Screening</option>
+            </select>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-800 mb-1">2. Appointment Date</label>
+              <input type="date" id="appointmentDate" required class="w-full px-3 py-2 text-sm bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-teal-600 focus:outline-none">
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-800 mb-1">Preferred Time Slot</label>
+              <select id="timeSlot" class="w-full px-3 py-2 text-sm bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-teal-600 focus:outline-none">
+                <option value="10:00 AM">10:00 AM (Morning OPD)</option>
+                <option value="11:00 AM">11:00 AM (Morning OPD)</option>
+                <option value="12:00 PM">12:00 PM (Morning OPD)</option>
+                <option value="05:00 PM">05:00 PM (Evening OPD)</option>
+                <option value="06:00 PM">06:00 PM (Evening OPD)</option>
+                <option value="07:00 PM">07:00 PM (Evening OPD)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="space-y-4 pt-4 border-t border-slate-100">
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-800">3. Patient Details</label>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-medium text-slate-700 mb-1">Patient Name *</label>
+                <input type="text" id="patientName" required placeholder="e.g. Rameshwar Prasad" class="w-full px-3 py-2 text-sm bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-teal-600 focus:outline-none">
+              </div>
+
+              <div>
+                <label class="block text-xs font-medium text-slate-700 mb-1">Mobile Number (WhatsApp Preferred) *</label>
+                <input type="tel" id="patientPhone" required placeholder="10-digit number" class="w-full px-3 py-2 text-sm bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-teal-600 focus:outline-none">
+              </div>
+
+              <div>
+                <label class="block text-xs font-medium text-slate-700 mb-1">Age & Gender</label>
+                <div class="flex gap-2">
+                  <input type="number" id="patientAge" placeholder="Age" min="1" max="110" class="w-1/2 px-3 py-2 text-sm bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-teal-600 focus:outline-none">
+                  <select id="patientGender" class="w-1/2 px-3 py-2 text-sm bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-teal-600 focus:outline-none">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-medium text-slate-700 mb-1">Area / Locality in Motihari</label>
+                <input type="text" id="patientArea" placeholder="e.g. Balua, Raja Bazar, Dhaka" class="w-full px-3 py-2 text-sm bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-teal-600 focus:outline-none">
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="w-full py-3.5 px-6 text-sm font-semibold text-white bg-teal-700 hover:bg-teal-800 rounded-lg shadow-sm transition-all">
+            Confirm Booking & Get OPD Token (Registration Fee ₹100)
+          </button>
+        </form>
+
+        <!-- Confirmed Slip Container -->
+        <div id="confirmedSlipSection" class="hidden space-y-6 pt-6 border-t border-slate-200">
+          <div class="p-4 bg-emerald-50 border border-emerald-200 rounded-xl text-emerald-900 text-xs sm:text-sm flex items-center gap-2">
+            <i class="fa-solid fa-circle-check text-emerald-600 text-lg"></i>
+            <span><strong>Booking Confirmed!</strong> Your token has been generated below.</span>
+          </div>
+
+          <!-- Printable Digital OPD Slip -->
+          <div id="printable-slip" class="bg-white border-2 border-slate-200 rounded-xl p-6 space-y-4">
+            <div class="flex items-start justify-between border-b pb-4">
+              <div>
+                <div class="text-xs font-bold uppercase tracking-wider text-teal-700">Sri Baidyanath Diabetes Clinic</div>
+                <h3 class="text-xl font-bold text-slate-900">Dr. Raj Vardhan</h3>
+                <div class="text-xs text-slate-500">MBBS, P.G. Diploma in Diabetology · Balua Taal Rd, Motihari</div>
+              </div>
+              <div class="text-right">
+                <div class="text-xs text-slate-400">Token Number</div>
+                <div id="slipToken" class="text-2xl font-bold font-mono text-teal-800">MTH-SB-4192</div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3 text-xs">
+              <div><span class="text-slate-400">Patient:</span> <strong id="slipName" class="text-slate-900 block"></strong></div>
+              <div><span class="text-slate-400">Contact:</span> <strong id="slipPhone" class="text-slate-900 block"></strong></div>
+              <div><span class="text-slate-400">Date & Slot:</span> <strong id="slipSlot" class="text-slate-900 block"></strong></div>
+              <div><span class="text-slate-400">OPD Fee:</span> <strong class="text-emerald-700 block">₹100 (At Counter)</strong></div>
+            </div>
+
+            <div class="no-print pt-3 flex flex-wrap gap-3">
+              <button onclick="window.print()" class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-lg text-xs font-semibold">
+                <i class="fa-solid fa-print"></i> Print OPD Slip
+              </button>
+              <a id="whatsappShareBtn" target="_blank" class="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-xs font-semibold inline-flex items-center gap-1.5">
+                <i class="fa-brands fa-whatsapp"></i> Send to Clinic WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 7. SUGAR TARGET CALCULATOR ================= -->
+  <section id="calculator" class="py-16 sm:py-20 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <div class="max-w-3xl mb-10">
+        <div class="text-xs font-semibold uppercase tracking-wider text-teal-700 mb-1">Health Screening Tool</div>
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">Check Your Blood Sugar & HbA1c Target</h2>
+        <p class="mt-2 text-slate-600 text-xs sm:text-sm">
+          Enter your recent glucometer reading or lab test to check clinical RSSDI/ADA control levels.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+        <div class="md:col-span-6 bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-5">
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">1. Select Reading Type</label>
+            <div class="grid grid-cols-3 gap-2">
+              <button onclick="setCalcType('fasting')" id="btnFasting" class="py-2.5 px-3 rounded-lg text-xs font-semibold border border-teal-700 bg-teal-50 text-teal-900 ring-1 ring-teal-700">Fasting Sugar</button>
+              <button onclick="setCalcType('pp')" id="btnPp" class="py-2.5 px-3 rounded-lg text-xs font-semibold border border-slate-200 bg-white text-slate-700">Post-Meal (PP)</button>
+              <button onclick="setCalcType('hba1c')" id="btnHba1c" class="py-2.5 px-3 rounded-lg text-xs font-semibold border border-slate-200 bg-white text-slate-700">HbA1c (%)</button>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">2. Enter Reading Value</label>
+            <div class="flex items-center gap-3">
+              <input type="number" id="calcValue" value="145" oninput="runCalculator()" class="w-full text-2xl font-bold font-mono px-4 py-3 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-teal-600 focus:outline-none">
+              <span id="calcUnit" class="text-base font-bold text-slate-600 shrink-0">mg/dL</span>
+            </div>
+            <div class="flex gap-2 mt-2 text-xs text-slate-500">
+              <span>Quick:</span>
+              <button onclick="setQuickVal(95)" class="px-2 py-0.5 bg-slate-200 rounded">95</button>
+              <button onclick="setQuickVal(145)" class="px-2 py-0.5 bg-slate-200 rounded">145</button>
+              <button onclick="setQuickVal(230)" class="px-2 py-0.5 bg-slate-200 rounded">230</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:col-span-6">
+          <div id="calcResultBox" class="p-6 rounded-2xl border border-teal-200 bg-teal-50/60 space-y-4 shadow-sm">
+            <div class="flex justify-between items-center">
+              <span class="text-xs uppercase tracking-wider text-slate-500 font-semibold">Clinical Interpretation</span>
+              <span id="calcStatusBadge" class="px-3 py-1 bg-white rounded-full text-xs font-bold text-amber-800 border border-slate-200">Pre-Diabetes</span>
+            </div>
+
+            <h3 id="calcHeading" class="text-2xl font-bold text-amber-900">Elevated Glycemic Level</h3>
+            <p id="calcAdvice" class="text-xs sm:text-sm text-slate-700 leading-relaxed bg-white p-4 rounded-xl border border-slate-200">
+              Indicates impaired glucose tolerance. Dietary counseling and medication review with Dr. Raj Vardhan recommended to prevent long-term microvascular complications.
+            </p>
+
+            <a href="#booking-section" class="block w-full py-3 bg-teal-800 hover:bg-teal-900 text-white font-semibold rounded-xl text-xs sm:text-sm text-center transition-all">
+              Book Consultation for this Reading (OPD Token ₹100)
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 8. GOOGLE REVIEWS (4.9★) ================= -->
+  <section id="reviews" class="py-16 sm:py-20 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <div class="max-w-3xl mb-12">
+        <div class="text-xs font-semibold uppercase tracking-wider text-teal-700 mb-1">Patient Testimonials</div>
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">Patient Stories & Google Reviews</h2>
+        <p class="text-slate-600 text-xs sm:text-sm mt-1">
+          Rated 4.9 out of 5.0 across 311+ Google reviews by families from Motihari, Chakia, Dhaka, and East Champaran.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 mb-10 shadow-sm">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+          <div class="md:col-span-4 text-center md:text-left space-y-2 border-b md:border-b-0 md:border-r border-slate-200 pb-6 md:pb-0 md:pr-6">
+            <div class="text-5xl font-extrabold text-slate-900 font-mono">4.9</div>
+            <div class="text-amber-500 text-lg">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <div class="text-xs text-slate-500">Based on <strong>311 Google Reviews</strong></div>
+          </div>
+
+          <div class="md:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-slate-700">
+            <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
+              <div class="font-bold text-slate-900">Rameshwar Prasad Srivastava (Raja Bazar)</div>
+              <div class="text-amber-500"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p class="italic text-slate-600">"He is a very good and knowledgeable doctor. way of treatment is too good. Fasting sugar stabilized within 3 weeks under Dr. Raj Vardhan sir."</p>
+            </div>
+
+            <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
+              <div class="font-bold text-slate-900">Sunita Devi (Balua Taal)</div>
+              <div class="text-amber-500"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p class="italic text-slate-600">"Nice to have a hospital dedicated to diabetes under qualified Rajvardhan sir. Sir is really patient supportive gives proper 15-20 min time."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 9. FREQUENTLY ASKED QUESTIONS (FAQS) ================= -->
+  <section id="faqs" class="py-16 sm:py-20 bg-white border-b border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <div class="text-xs font-semibold uppercase tracking-wider text-teal-700 mb-1">Patient Knowledge Base</div>
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">Frequently Asked Questions</h2>
+        <p class="text-xs sm:text-sm text-slate-600 mt-2">Common inquiries about OPD fees, rapid lab tests, fasting rules, and diabetes care.</p>
+      </div>
+
+      <div class="space-y-3 text-xs sm:text-sm">
+        <details class="group bg-slate-50 border border-slate-200 rounded-xl p-4 sm:p-5" open>
+          <summary class="font-bold text-slate-900 cursor-pointer flex justify-between items-center list-none">
+            <span>1. What is the OPD Token registration fee? Do I need to pay online in advance?</span>
+            <span class="text-teal-700 font-bold text-lg group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="mt-3 text-slate-600 leading-relaxed">
+            The registration fee is <strong>₹100 only</strong>. There is <strong>ZERO advance online payment</strong> required on this portal. You simply reserve your token online and pay the ₹100 fee at the clinic counter upon arrival.
+          </p>
+        </details>
+
+        <details class="group bg-slate-50 border border-slate-200 rounded-xl p-4 sm:p-5">
+          <summary class="font-bold text-slate-900 cursor-pointer flex justify-between items-center list-none">
+            <span>2. How fast do I get my HbA1c and Blood Sugar lab reports?</span>
+            <span class="text-teal-700 font-bold text-lg group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="mt-3 text-slate-600 leading-relaxed">
+            Our in-house rapid diagnostic lab delivers accurate <strong>HbA1c (3-month blood sugar average) in just 10–12 minutes</strong>, allowing same-day consultation with Dr. Raj Vardhan without any multi-day delay.
+          </p>
+        </details>
+
+        <details class="group bg-slate-50 border border-slate-200 rounded-xl p-4 sm:p-5">
+          <summary class="font-bold text-slate-900 cursor-pointer flex justify-between items-center list-none">
+            <span>3. How many hours of fasting are required for blood sugar and lipid tests?</span>
+            <span class="text-teal-700 font-bold text-lg group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="mt-3 text-slate-600 leading-relaxed">
+            Fasting blood sugar and lipid profiles require <strong>10 to 12 hours of overnight fasting</strong>. Drinking plain water is allowed, but strictly avoid tea, milk, biscuits, or morning breakfast before the blood draw.
+          </p>
+        </details>
+
+        <details class="group bg-slate-50 border border-slate-200 rounded-xl p-4 sm:p-5">
+          <summary class="font-bold text-slate-900 cursor-pointer flex justify-between items-center list-none">
+            <span>4. What are the early signs of Diabetic Neuropathy in feet?</span>
+            <span class="text-teal-700 font-bold text-lg group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="mt-3 text-slate-600 leading-relaxed">
+            Burning sensation, needle-pricking, tingling, or numbness in the feet are early warnings of nerve impairment. Dr. Raj Vardhan conducts 10g monofilament sensory screenings to diagnose and prevent non-healing diabetic ulcers.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 10. CLINIC LOCATION & TIMINGS ================= -->
+  <section id="location" class="py-16 sm:py-20 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="max-w-3xl mb-10">
+        <div class="text-xs font-semibold uppercase tracking-wider text-teal-700 mb-1">Visit Us</div>
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">Clinic Location, Timings & Route</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="p-6 sm:p-8 bg-white rounded-2xl border border-slate-200 space-y-4 shadow-sm">
+          <h4 class="font-bold text-slate-900 text-lg">Sri Baidyanath Diabetes Clinic</h4>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Near City Cart Mall, Dr. D. Nath Gali, Balua Taal Rd, Azad Nagar, Netajee Subhash Colony, Motihari, Bihar 845401
+          </p>
+          <div class="text-xs text-slate-500 space-y-1.5 pt-2 border-t">
+            <div>📍 <strong>Landmark:</strong> Opposite Bharat Petrol Pump / Near City Cart Mall</div>
+            <div>🚶 <strong>Distances:</strong> 1.0 km from Balua Chowk · 1.8 km from Motihari Railway Station</div>
+            <div>📞 <strong>Helplines:</strong> 095660 39238 / 094719 61838</div>
+          </div>
+          <div class="pt-2">
+            <a href="https://maps.google.com/?q=Sri+Baidyanath+Diabetes+Clinic+Balua+Taal+Rd+Motihari+Bihar+845401" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 bg-slate-900 text-white rounded-lg text-xs font-semibold hover:bg-slate-800 transition-colors">
+              <i class="fa-solid fa-location-arrow text-emerald-400"></i> Open in Google Maps Route
+            </a>
+          </div>
+        </div>
+
+        <div class="p-6 sm:p-8 bg-white rounded-2xl border border-slate-200 space-y-4 shadow-sm text-xs sm:text-sm">
+          <h4 class="font-bold text-slate-900 text-lg">OPD Consultation Hours</h4>
+          <div class="flex justify-between py-2 border-b border-slate-100">
+            <span class="text-slate-600">Mon – Sat (Morning Shift)</span>
+            <strong class="text-slate-900">08:30 AM – 01:30 PM</strong>
+          </div>
+          <div class="flex justify-between py-2 border-b border-slate-100">
+            <span class="text-slate-600">Mon – Sat (Evening Shift)</span>
+            <strong class="text-slate-900">04:00 PM – 08:00 PM</strong>
+          </div>
+          <div class="flex justify-between py-2 border-b border-slate-100">
+            <span class="text-slate-600">Sunday Special OPD</span>
+            <strong class="text-amber-700">09:00 AM – 01:00 PM</strong>
+          </div>
+          <div class="flex justify-between py-2">
+            <span class="text-slate-600">OPD Token Fee</span>
+            <strong class="text-emerald-700 font-bold">₹100 Only (Pay at counter)</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 11. FOOTER ================= -->
+  <footer class="bg-slate-900 text-slate-400 pt-12 pb-16 sm:pb-8 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 space-y-6">
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 border-b border-slate-800 pb-6">
+        <div class="flex items-center gap-2 text-white font-bold text-base font-heading">
+          <span class="w-7 h-7 bg-teal-600 rounded-lg flex items-center justify-center text-xs">SB</span>
+          Sri Baidyanath Diabetes Clinic · Motihari
+        </div>
+        <div class="flex gap-4">
+          <a href="tel:+919566039238" class="hover:text-white"><i class="fa-solid fa-phone"></i> 095660 39238</a>
+          <a href="https://wa.me/919566039238" target="_blank" class="hover:text-white"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+        </div>
+      </div>
+      <p class="text-slate-500 leading-relaxed text-center sm:text-left">
+        <strong>Medical Disclaimer:</strong> Information provided is for educational and appointment token registration purposes. Consult Dr. Raj Vardhan at Sri Baidyanath Diabetes Clinic for personalized clinical diagnosis and treatment plans.
+      </p>
+      <div class="text-center sm:text-left text-slate-500">
+        © 2026 Sri Baidyanath Diabetes Clinic · Balua Taal Rd, Motihari, Bihar 845401.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= 12. MOBILE STICKY FLOATING ACTION BAR ================= -->
+  <div class="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-slate-200 p-2 sm:hidden flex gap-2 shadow-2xl">
+    <a href="tel:+919566039238" class="flex-1 py-2 text-center text-xs font-semibold text-slate-800 bg-slate-100 rounded-lg flex items-center justify-center gap-1.5">
+      <i class="fa-solid fa-phone text-teal-700"></i> Call
+    </a>
+    <a href="https://wa.me/919566039238" target="_blank" class="flex-1 py-2 text-center text-xs font-semibold text-white bg-emerald-600 rounded-lg flex items-center justify-center gap-1.5">
+      <i class="fa-brands fa-whatsapp"></i> WhatsApp
+    </a>
+    <a href="#booking-section" class="flex-1 py-2 text-center text-xs font-semibold text-white bg-teal-700 rounded-lg flex items-center justify-center gap-1.5">
+      <i class="fa-regular fa-calendar-check"></i> Book (₹100)
+    </a>
+  </div>
+
+  <script>
+    const tom = new Date();
+    tom.setDate(tom.getDate() + 1);
+    document.getElementById('appointmentDate').value = tom.toISOString().split('T')[0];
+
+    function toggleMobileMenu() {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    }
+
+    // Calculator Logic
+    let currentCalcType = 'fasting';
+    function setCalcType(type) {
+      currentCalcType = type;
+      document.getElementById('btnFasting').className = type === 'fasting' ? 'py-2.5 px-3 rounded-lg text-xs font-semibold border border-teal-700 bg-teal-50 text-teal-900 ring-1 ring-teal-700' : 'py-2.5 px-3 rounded-lg text-xs font-semibold border border-slate-200 bg-white text-slate-700';
+      document.getElementById('btnPp').className = type === 'pp' ? 'py-2.5 px-3 rounded-lg text-xs font-semibold border border-teal-700 bg-teal-50 text-teal-900 ring-1 ring-teal-700' : 'py-2.5 px-3 rounded-lg text-xs font-semibold border border-slate-200 bg-white text-slate-700';
+      document.getElementById('btnHba1c').className = type === 'hba1c' ? 'py-2.5 px-3 rounded-lg text-xs font-semibold border border-teal-700 bg-teal-50 text-teal-900 ring-1 ring-teal-700' : 'py-2.5 px-3 rounded-lg text-xs font-semibold border border-slate-200 bg-white text-slate-700';
+      
+      document.getElementById('calcUnit').innerText = type === 'hba1c' ? '%' : 'mg/dL';
+      document.getElementById('calcValue').value = type === 'hba1c' ? '7.5' : (type === 'pp' ? '180' : '145');
+      runCalculator();
+    }
+
+    function setQuickVal(val) {
+      document.getElementById('calcValue').value = val;
+      runCalculator();
+    }
+
+    function runCalculator() {
+      const val = parseFloat(document.getElementById('calcValue').value);
+      if (isNaN(val)) return;
+
+      const badge = document.getElementById('calcStatusBadge');
+      const head = document.getElementById('calcHeading');
+      const advice = document.getElementById('calcAdvice');
+
+      if (currentCalcType === 'fasting') {
+        if (val < 100) {
+          badge.innerText = 'Normal';
+          head.innerText = 'Optimal Fasting Sugar';
+          advice.innerText = 'Healthy non-diabetic baseline. Continue balanced nutrition and routine checks.';
+        } else if (val <= 125) {
+          badge.innerText = 'Pre-Diabetes';
+          head.innerText = 'Borderline Fasting Sugar';
+          advice.innerText = 'Impaired fasting glucose. Early dietary modification can reverse progression.';
+        } else {
+          badge.innerText = 'Diabetic Range';
+          head.innerText = 'Elevated Fasting Sugar';
+          advice.innerText = 'Significantly above normal. Dr. Raj Vardhan can help titrate medications to bring this below 110 mg/dL.';
+        }
+      } else if (currentCalcType === 'pp') {
+        if (val < 140) {
+          badge.innerText = 'Normal';
+          head.innerText = 'Normal Post-Meal Level';
+          advice.innerText = 'Your body processes carbohydrates efficiently. Excellent metabolic control.';
+        } else {
+          badge.innerText = 'Elevated';
+          head.innerText = 'Post-Meal Sugar Spike';
+          advice.innerText = 'Indicates insulin insufficiency during digestion. Medical review recommended.';
+        }
+      } else {
+        if (val < 5.7) {
+          badge.innerText = 'Normal';
+          head.innerText = 'Normal 3-Month Average';
+          advice.innerText = 'Optimal long-term glucose management.';
+        } else if (val <= 6.4) {
+          badge.innerText = 'Pre-Diabetes';
+          head.innerText = 'Pre-Diabetic Range';
+          advice.innerText = 'Moderate risk of developing Type 2 diabetes. Lifestyle counseling recommended.';
+        } else {
+          badge.innerText = 'High Risk';
+          head.innerText = 'Uncontrolled Glycemia';
+          advice.innerText = 'Persistent hyperglycemia over 90 days. Risk of kidney and nerve complications.';
+        }
+      }
+    }
+
+    // Booking Submission
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('patientName').value.trim();
+      const phone = document.getElementById('patientPhone').value.trim();
+      const date = document.getElementById('appointmentDate').value;
+      const slot = document.getElementById('timeSlot').value;
+      const service = document.getElementById('serviceSelect').value;
+
+      const randomToken = 'MTH-SB-' + Math.floor(1000 + Math.random() * 9000);
+
+      document.getElementById('slipToken').innerText = randomToken;
+      document.getElementById('slipName').innerText = name;
+      document.getElementById('slipPhone').innerText = '+91 ' + phone;
+      document.getElementById('slipSlot').innerText = date + ' at ' + slot;
+
+      const waText = encodeURIComponent("Namaste Dr. Raj Vardhan Sir,\nMy OPD Token: " + randomToken + "\nPatient: " + name + "\nDate: " + date + " (" + slot + ")\nService: " + service);
+      document.getElementById('whatsappShareBtn').href = "https://wa.me/919566039238?text=" + waText;
+
+      document.getElementById('confirmedSlipSection').classList.remove('hidden');
+      document.getElementById('confirmedSlipSection').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
